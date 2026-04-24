@@ -1,8 +1,7 @@
 import Contentstack from "contentstack";
 
-// Using the actual keys provided instead of treating them as process.env props
-const apiKey = process.env.CONTENTSTACK_API_KEY || "bltc7d7f5aba6e6d5a4";
-const deliveryToken = process.env.CONTENTSTACK_DELIVERY_TOKEN || "cs2540af18c2ee848c976873cd";
+const apiKey = process.env.CONTENTSTACK_API_KEY;
+const deliveryToken = process.env.CONTENTSTACK_DELIVERY_TOKEN;
 const environment = process.env.CONTENTSTACK_ENVIRONMENT || "development";
 
 function createQueryStub(): any {
